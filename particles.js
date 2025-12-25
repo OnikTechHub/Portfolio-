@@ -60,3 +60,10 @@ particlesJS("particles-js", {
   },
   retina_detect: true
 });
+function resize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resize();
+
+window.addEventListener("resize", resize);
